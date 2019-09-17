@@ -2,12 +2,22 @@
 	
 }
 
+.banner {
+	position: relative;
+	margin: auto;
+}
+
+.slides {
+	margin: 0 auto;
+	display:none;
+}
+
 .navbar {
 	padding-left: 50px;
 	font-size: 26px;
 }
 
-.nav-item {
+.nav-item  {
 	padding-left: 10px;
 	padding-right: 15px;
 }

@@ -13,12 +13,26 @@
 	rel="stylesheet" />
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$("#header").load("view/client/header.html");
-			$("#footer").load("view/client/footer.html");
-		});
-	</script>
+<script>
+	$(document).ready(function() {
+		$("#header").load("view/client/header.html");
+		$("#footer").load("view/client/footer.html");
+	});
+	var index = 0;
+	autoSlide();
+	function autoSlide() {
+		var slide = $(".slides").length;
+		for (var i = 0; i < slide; i++) {
+			slide[i].style.display = "none";
+		}
+		index++;
+		if (index > slide) {
+			index = 1;
+		}
+		slide[index - 1].style.display = "block";
+		setTimeout(autoSlide, 4000);
+	}
+</script>
 <title>Trang chủ</title>
 </head>
 <body>
@@ -27,7 +41,11 @@
 	<!-- end header -->
 
 	<!-- start body -->
-
+	<div class="banner">
+		<img class="slides fade" src="resources/client/images/banner1.jpg" style="width: 85%" alt="banner1">
+		<img class="slides fade" src="resources/client/images/banner2.jpg" style="width: 85%" alt="banner2">
+		<img class="slides fade" src="resources/client/images/banner3.jpg" style="width: 85%" alt="banner3">
+	</div>
 	<!-- end body -->
 
 	<!-- start footer -->
