@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css"
+	href="resources/client/css/include.css">
+<link rel="stylesheet" type="text/css"
+	href="resources/client/css/login.css">
+<script src="resources/client/js/include.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="container">
+		<form action="/action_page.php">
+			<div class="row">
+				<h2 style="text-align: center">Đăng nhập</h2>
+				<div class="vl">
+					<span class="vl-innertext">hoặc</span>
+				</div>
+
+				<div class="col">
+					<div class="hide-md-lg">
+						<p>Or sign in manually:</p>
+					</div>
+
+					<input type="text" name="username" placeholder="Tài khoản" required>
+					<input type="password" name="password" placeholder="Mật khẩu"
+						required> <input type="submit" value="Login">
+				</div>
+
+				<div class="col">
+					<a href="#" class="fb btn"> <i class="fa fa-facebook fa-fw"></i>
+						 Đăng nhập bằng Facebook
+					</a> <a href="#" class="twitter btn"> <i
+						class="fa fa-twitter fa-fw"></i> Đăng nhập bằng twitter
+					</a> <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+					</i>  Đăng nhập bằng Google+ </a>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="scroll"></div>
+	<div id="footer"></div>
+</body>
+</html>
