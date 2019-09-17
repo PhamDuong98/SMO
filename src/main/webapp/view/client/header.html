@@ -1,39 +1,48 @@
-	<nav class="navbar navbar-expand-sm bg-light navbar-light">
-		<!-- Brand -->
-		<a class="navbar-brand" href="#"><i class="fa fa-home"
-			aria-hidden="true"></i></a>
 
-		<!-- Toggler/collapsibe Button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<nav class="navbar navbar-expand-sm">
+	<!-- Brand -->
+	<a class="logo" href="#"><i class="fa fa-home"></i></a>
 
-		<!-- Navbar links -->
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#collapsibleNavbar">
+		<i class="fa fa-bars"></i>
+	</button>
 
-				<!-- start dropdown -->
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-					id="dropdown-link" data-toggle="dropdown">Brands</a>
-					<div class="dropdown-menu dropdown-primary"
-						aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#">Nike</a> <a
-							class="dropdown-item" href="#">Adidas</a> <a
-							class="dropdown-item" href="#">Converse</a>
-					</div></li>			
-				<!-- end dropdown -->
-				
-				<li class="nav-item"><a class="nav-link" href="#">Boys</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Girls</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-				<form class="form-inline">
-					<input class="form-control" id="search" type="text" placeholder="Search"
-						aria-label="Search">
-				</form>
-				<li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"aria-hidden="true"></i><span class="badge">5</span></a></li>
-				
-			</ul>
-		</div>
-	</nav>
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="nav navbar-nav">
+
+			<!-- start dropdown -->
+			<li class="nav-item dropdown"><a
+				class="nav-link dropdown-toggle" id="dropdown-link"
+				data-toggle="dropdown">Brands</a>
+				<div class="dropdown-menu dropdown-primary"
+					aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#">Nike</a> <a class="dropdown-item"
+						href="#">Adidas</a> <a class="dropdown-item" href="#">Converse</a>
+				</div></li>
+			<!-- end dropdown -->
+
+			<li class="nav-item dropdown"><a
+				class="nav-link dropdown-toggle" id="dropdown-link"
+				data-toggle="dropdown">Gender</a>
+				<div class="dropdown-menu dropdown-primary"
+					aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#">Boys</a> <a class="dropdown-item"
+						href="#">Girls</a>
+				</div></li>
+			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+		</ul>
+		<ul class="nav navbar-nav ml-auto">
+			<form class="form-inline">
+				<input class="form-control" id="search" type="text"
+					placeholder="Search" aria-label="Search">
+			</form>
+			<li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+			<li class="nav-item"><a class="nav-link" href="#"><i
+					class="fa fa-shopping-cart" aria-hidden="true"></i><span
+					class="badge">5</span></a></li>
+		</ul>
+	</div>
+</nav>
