@@ -8,41 +8,65 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css"
 	href="resources/client/css/include.css">
-<link rel="stylesheet" type="text/css"
-	href="resources/client/css/login.css">
 <script src="resources/client/js/include.js"></script>
 </head>
 <body>
 	<div id="header"></div>
-	<div class="container">
-		<form action="/action_page.php">
-			<div class="row">
-				<h2 style="text-align: center">Đăng nhập</h2>
-				<div class="vl">
-					<span class="vl-innertext">hoặc</span>
-				</div>
 
-				<div class="col">
-					<div class="hide-md-lg">
-						<p>Đăng nhập bằng tài khoản</p>
-					</div>
+	<!-- Default form login -->
+	<form class="text-center border border-light p-5" action="#!">
 
-					<input type="text" name="username" placeholder="Tài khoản" required>
-					<input type="password" name="password" placeholder="Mật khẩu"
-						required> <input type="submit" value="Login">
-				</div>
+		<p class="h4 mb-4">Sign in</p>
 
-				<div class="col">
-					<a href="#" class="fb btn"> <i class="fa fa-facebook fa-fw"></i>
-						 Đăng nhập bằng Facebook
-					</a> <a href="#" class="twitter btn"> <i
-						class="fa fa-twitter fa-fw"></i> Đăng nhập bằng twitter
-					</a> <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-					</i>  Đăng nhập bằng Google+ </a>
+		<!-- Email -->
+		<input type="email" id="defaultLoginFormEmail"
+			class="form-control mb-4" placeholder="E-mail">
+
+		<!-- Password -->
+		<input type="password" id="defaultLoginFormPassword"
+			class="form-control mb-4" placeholder="Password">
+
+		<div class="d-flex justify-content-around">
+			<div>
+				<!-- Remember me -->
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input"
+						id="defaultLoginFormRemember"> <label
+						class="custom-control-label" for="defaultLoginFormRemember">Remember
+						me</label>
 				</div>
 			</div>
-		</form>
-	</div>
+			<div>
+				<!-- Forgot password -->
+				<a href="">Forgot password?</a>
+			</div>
+		</div>
+
+		<!-- Sign in button -->
+		<button class="btn btn-info btn-block my-4" type="submit">Sign
+			in</button>
+
+		<!-- Register -->
+		<p>
+			Not a member? <a href="">Register</a>
+		</p>
+
+		<!-- Social login -->
+		<p>or sign in with:</p>
+
+		<a type="button" class="light-blue-text mx-2"> <i
+			class="fab fa-facebook-f"></i>
+		</a> <a type="button" class="light-blue-text mx-2"> <i
+			class="fab fa-twitter"></i>
+		</a> <a type="button" class="light-blue-text mx-2"> <i
+			class="fab fa-linkedin-in"></i>
+		</a> <a type="button" class="light-blue-text mx-2"> <i
+			class="fab fa-github"></i>
+		</a>
+
+	</form>
+	<!-- Default form login -->
+
 	<div id="scroll"></div>
 	<div id="footer"></div>
 </body>
