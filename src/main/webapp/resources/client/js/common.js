@@ -12,4 +12,13 @@ $(document).ready(function() {
 		}, 600);
 		return false;
 	});
+
+	var form = document.querySelector("#popup-form");
+	
+	$('#user').hover(function() {
+		// ('#popup-form').css({"display": "block"});
+		form.style.display = "block";
+	}, function() {
+		form.style.display = "none";
+	});
 });

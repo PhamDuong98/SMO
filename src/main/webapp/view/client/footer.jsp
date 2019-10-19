@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <footer class="pt-5 pb-4" id="contact">
 	<div class="container">
 		<div class="row">
@@ -60,15 +62,3 @@
 		</div>
 	</div>
 </footer>
-
-<!-- Copyright -->
-<section class="copyright">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 ">
-				<div class="text-center text-white">&copy; 2018 Your Company.
-					All Rights Reserved.</div>
-			</div>
-		</div>
-	</div>
-</section>

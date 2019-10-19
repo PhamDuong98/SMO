@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,52 +9,16 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css"
-	href="resources/client/css/include.css">
-<script src="resources/client/js/include.js"></script>
+	href="<%=request.getContextPath()%>/resources/client/css/header.css">
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/resources/client/css/login.css">
 </head>
-<style>
-.login-form {
-	margin: 0 auto;
-	width: 40%;
-}
-
-.btn-social {
-	border-radius: 50%;
-	color: #ffffff !important;
-	display: inline-block;
-	height: 54px;
-	line-height: 54px;
-	margin: 8px 4px;
-	text-align: center;
-	text-decoration: none;
-	transition: background-color .3s;
-	webkit-transition: background-color .3s;
-	width: 54px;
-}
-
-.btn-facebook
-{
-    background-color: #3b5998;
-}
-.btn-facebook:hover
-{
-    background-color: #4c70ba;
-}
-.btn-google-plus
-{
-    background-color: #dd4b39;
-}
-.btn-google-plus:hover
-{
-    background-color: #e47365;
-}
-</style>
 <body>
-	<div id="header"></div>
+	<%@ include file="header.jsp"%>
 
 	<!-- Default form login -->
 	<div class="login-form">
-		<form class="text-center border border-primary p-5" action="#!">
+		<form class="text-center border border-light p-5" action="#!">
 
 			<p class="h4 mb-4">Đăng nhập</p>
 
@@ -65,15 +31,14 @@
 				placeholder="Mật khẩu">
 
 			<div class="d-flex justify-content-around">
-				<div>
-					<!-- Remember me -->
-					<div class="custom-control custom-checkbox">
-						<input type="checkbox" class="custom-control-input"
-							id="defaultLoginFormRemember"> <label
-							class="custom-control-label" for="defaultLoginFormRemember">Nhớ tài khoản</label>
-					</div>
+				<!-- Remember me -->
+				<div class="custom-control custom-checkbox ">
+					<input type="checkbox" class="custom-control-input"
+						id="defaultLoginFormRemember"> <label
+						class="custom-control-label" for="defaultLoginFormRemember">Nhớ
+						tài khoản</label>
 				</div>
-				<div>
+				<div class="forget-password">
 					<!-- Forgot password -->
 					<a href="#">Quên mật khẩu?</a>
 				</div>
@@ -85,7 +50,9 @@
 
 			<!-- Register -->
 			<p>
-				Chưa có tài khoản? <a href="register.html">Đăng ký</a>
+				Chưa có tài khoản? <a
+					href="<%=request.getContextPath()%>/view/client/register.jsp">Đăng
+					ký</a>
 			</p>
 
 			<!-- Social login -->
@@ -99,7 +66,13 @@
 		<!-- Default form login -->
 	</div>
 
-	<div id="scroll"></div>
-	<div id="footer"></div>
+	<%@ include file="scroll.jsp"%>
+	<%@ include file="footer.jsp"%>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/resources/client/js/common.js"></script>
 </body>
 </html>

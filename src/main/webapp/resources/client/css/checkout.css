@@ -1,0 +1,11 @@
+.card {
+	box-shadow: 0 0 2px 0;
+}
+
+.select-payment {
+	margin-bottom: 10px;
+}
+
+.payment {
+	display: none;
+}

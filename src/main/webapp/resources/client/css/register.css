@@ -1,4 +1,4 @@
-.login-form {
+.register-form {
 	margin: 0 auto;
 	width: 40%;
 }
@@ -31,4 +31,9 @@
 
 .btn-google-plus:hover {
 	background-color: #e47365;
+}
+
+.register-form small {
+	color: red;
+	display: none;
 }

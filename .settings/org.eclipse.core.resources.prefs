@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
-encoding//src/main/webapp/view/client/home.html=UTF-8
+encoding//src/main/webapp/view/client/cart.jsp=UTF-8
+encoding//src/main/webapp/view/client/footer.jsp=UTF-8
+encoding//src/main/webapp/view/client/header.jsp=UTF-8

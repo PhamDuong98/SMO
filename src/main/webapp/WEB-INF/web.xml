@@ -5,6 +5,6 @@
     version="3.0">
 	<display-name>Servlet 3.0 Web Application</display-name>
 	<welcome-file-list>
-		<welcome-file>/view/client/home.html</welcome-file>
+		<welcome-file>/view/client/home.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>

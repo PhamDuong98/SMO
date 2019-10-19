@@ -1,0 +1,19 @@
+.card {
+	box-shadow: 0 0 2px 0;
+	margin-top: 10px
+}
+
+.icon-check {
+	text-align: center;
+	padding: 20px;
+	background-color: #d03b4a;
+	border-radius: 50%;
+	width: 85px;
+	margin: 0 auto;
+	font-size: 28px;
+	color: #fff;
+}
+
+.message {
+	text-align: center;
+}
